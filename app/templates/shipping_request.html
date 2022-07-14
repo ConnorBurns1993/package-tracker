@@ -1,0 +1,11 @@
+<h1>New Packages Form</h1>
+<form method="POST" action="">
+    {{ form.csrf_token }}
+    <p>{{ form.name.label}} {{ form.name }}</p>
+    <p>{{ form.recipient.label}} {{ form.recipient }}</p>
+    <p>{{ form.origin.label}} {{ form.origin }}</p>
+    <p>{{ form.destination.label}} {{ form.destination }}</p>
+    <p>{{ form.express_shipping.label}} {{ form.express_shipping }}</p>
+    <p>{{ form.submit }}</p>
+    <p>{{ form.cancel }}</p>
+</form>

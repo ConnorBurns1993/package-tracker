@@ -1,0 +1,9 @@
+<h1>Package Status</h1>
+{% for package in packages %}
+<p>Sender: {{ package.sender }}</p>
+<p>Recipient: {{ package.recipient }}</p>
+<p>Package ID#: {{ package.id }}</p>
+<p> Coming From: {{ package.origin }}</p>
+<p> Currently at: {{ package.location }}</p>
+<p>Final Destination: {{ package.destination }}</p>
+{% endfor %}
